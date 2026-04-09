@@ -6,7 +6,7 @@ Use the existing `samuelgursky/davinci-resolve-mcp` repository locally (do not c
 
 ### 1) Install prerequisites
 - DaVinci Resolve Studio 20 (Studio is required for scripting)
-- Python 3.10–3.12
+- Python 3.10-3.12
 - In Resolve: **Preferences → General → External scripting using → Local**
 
 ### 2) Clone the open-source repo
@@ -56,4 +56,4 @@ If it fails, check:
 - Resolve is open
 - External scripting is set to Local
 - You are using Resolve Studio
-- Python is 3.10–3.12
+- Python is 3.10-3.12
