@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mayank Kumar | DevOps Engineer</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #111b2e;
+      --card-2: #16243d;
+      --text: #e7eefc;
+      --muted: #9cb0d6;
+      --accent: #4ea8ff;
+      --accent-2: #7de2d1;
+      --chip: #1d2d4a;
+      --line: #2a3f63;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(circle at 20% 0%, #152846 0, var(--bg) 35%);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .container {
+      width: min(1100px, 92vw);
+      margin: 28px auto 40px;
+      display: grid;
+      gap: 20px;
+    }
+
+    .hero, .card {
+      background: linear-gradient(160deg, var(--card), var(--card-2));
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(1.9rem, 3vw, 2.6rem);
+    }
+    .hero .role {
+      color: var(--accent-2);
+      font-weight: 600;
+      margin-top: 4px;
+    }
+    .hero .summary {
+      color: var(--muted);
+      margin: 14px 0;
+      max-width: 900px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .chip {
+      background: var(--chip);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 0.92rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1.2fr 1fr;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+    h3 {
+      margin: 0;
+      font-size: 1rem;
+    }
+    .sub {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 8px;
+    }
+    ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+    }
+    li { margin-bottom: 6px; }
+
+    .skill-group { margin-bottom: 12px; }
+    .skill-group strong { color: var(--accent-2); }
+    .achieve { margin-bottom: 10px; }
+
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 8px;
+    }
+
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <h1>Mayank Kumar</h1>
+      <div class="role">DevOps Engineer</div>
+      <p class="summary">
+        DevOps Engineer with 3.5 years of experience designing scalable and reliable infrastructure, building robust CI/CD pipelines, and improving observability with monitoring and logging.
+      </p>
+      <div class="meta">
+        <a class="chip" href="mailto:thakurmayank721@gmail.com">thakurmayank721@gmail.com</a>
+        <span class="chip">+91 8534815232 (WhatsApp)</span>
+        <span class="chip">Noida, India · Open to relocation (UAE)</span>
+        <a class="chip" href="https://linkedin.com/in/mayank-kumar-11a834198" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span class="chip">Visa: Requires Sponsorship</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Work Experience</h2>
+        <h3>DevOps Engineer · To The New</h3>
+        <div class="sub">Sep 2022 – Present · Noida</div>
+        <ul>
+          <li>Built Jenkins CI/CD pipelines reducing deployment time by 30%.</li>
+          <li>Implemented Kubernetes-based deployment, scaling, and management for containerized apps.</li>
+          <li>Configured Grafana + ELK observability, improving incident response by 20%.</li>
+          <li>Drove automated testing and CI strategy, improving reliability and scalability by 25%.</li>
+          <li>Managed Databricks platform with Terraform provisioning, Unity Catalog governance, and Serverless SQL migration.</li>
+        </ul>
+        <br />
+        <h3>DevOps Intern · Rapid Innovation</h3>
+        <div class="sub">Apr 2022 – Sep 2022</div>
+        <ul>
+          <li>Designed secure and scalable 3-tier architecture on AWS ECS with ALB and autoscaling.</li>
+          <li>Built Jenkins CI/CD workflows, reducing deployment time by ~50%.</li>
+          <li>Provisioned infrastructure through AWS CloudFormation for repeatable deployments.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Skills</h2>
+        <div class="skill-group"><strong>Cloud:</strong> AWS (EC2, ECS, EKS, ALB, RDS, S3, CloudFront, IAM, Lambda, Route 53, Secrets Manager, CloudWatch), Databricks</div>
+        <div class="skill-group"><strong>Containers:</strong> Docker, Kubernetes, ECS, EKS, Helm</div>
+        <div class="skill-group"><strong>IaC:</strong> Terraform, AWS CloudFormation</div>
+        <div class="skill-group"><strong>Observability:</strong> Kibana, Fluent Bit, Elasticsearch, Prometheus, Grafana, CloudWatch</div>
+        <div class="skill-group"><strong>CI/CD:</strong> Jenkins, GoCD, ArgoCD, BuildKite</div>
+        <div class="skill-group"><strong>Scripting:</strong> Python, Bash</div>
+        <div class="skill-group"><strong>Project Tools:</strong> Jira, Confluence</div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Projects</h2>
+        <h3>Quantum Gaming</h3>
+        <ul>
+          <li>Implemented GoCD-based CI/CD with versioning rollback capabilities.</li>
+          <li>Set up private API Gateway with Cognito OAuth 2.0 and CloudWatch metrics.</li>
+          <li>Enforced unit testing and SonarQube-based code quality checks.</li>
+          <li>Enabled secure storage and auth with DynamoDB + Cognito.</li>
+          <li>Supported Databricks data pipelines for scalable processing and monitoring.</li>
+        </ul>
+        <br />
+        <h3>Newer’s Worlds</h3>
+        <ul>
+          <li>Orchestrated microservices deployment on AWS ECS using Jenkins shared library and multi-branch pipelines.</li>
+          <li>Used custom Helm charts for environment promotions from dev to production.</li>
+          <li>Integrated Google Chat notifications for real-time Jenkins build status.</li>
+          <li>Configured Grafana + ELK observability stack for faster incident handling.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Achievements & Certifications</h2>
+        <div class="achieve"><strong>Star Performance of the Month</strong> · To The New (Q1 FY23, Q3 FY24, Q1 FY25, Q3 FY25, Q4 FY25)</div>
+        <div class="achieve"><strong>Team Awards</strong> · Most Impactful Team (Q4 FY23), Most Complicated Delivery Team (Q3 FY26)</div>
+        <div class="achieve"><strong>Published Content</strong> · Blog on securing AWS ALB behind CloudFront + WAF, and whitepaper on AWS Graviton impact.</div>
+        <div class="achieve"><strong>AWS Certified Solutions Architect – Associate</strong> (Oct 2023 – Oct 2026)</div>
+        <div class="achieve"><strong>Industry Relevant AWS Training Program</strong> (Apr 2022 – Present)</div>
+
+        <h2 style="margin-top:18px;">Education & Languages</h2>
+        <div class="achieve"><strong>B.Tech, Computer Science Engineering</strong><br />ABESIT College of Engineering, Ghaziabad (2018 – 2022)</div>
+        <div class="achieve"><strong>English:</strong> Full Professional Proficiency</div>
+        <div class="achieve"><strong>Hindi:</strong> Native / Bilingual Proficiency</div>
+      </div>
+    </section>
+
+    <div class="footer">Built for GitHub Pages · Last updated: April 10, 2026</div>
+  </main>
+</body>
+</html>
